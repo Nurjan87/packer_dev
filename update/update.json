@@ -12,6 +12,11 @@
         "inline": [
           "sudo yum update -y"
         ]
+      },
+      {
+        "type": "file",
+        "source": "app.tar.gz",
+        "destination": "/tmp/app.tar.gz"
       }
     ]
   }
