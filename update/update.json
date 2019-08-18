@@ -6,5 +6,12 @@
     "ssh_username": "ubuntu",
     "source_ami": "ami-0b898040803850657",
     "ami_name": "update-ami {{timestamp}}"
-    }]
+    }],
+    "provisioners": [
+      { "type": "shell",
+        "inline": [
+          "sudo yum update -y"
+        ]
+      }
+    ]
   }
