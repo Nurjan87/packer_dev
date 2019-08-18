@@ -1,17 +1,17 @@
 {
-    "builders": [{
+  "builders": [{
     "type": "amazon-ebs",
     "region": "us-east-1",
     "instance_type": "t2.micro",
     "ssh_username": "ec2-user",
     "source_ami": "ami-0b898040803850657",
-    "ami_name": "update-ami {{timestamp}}"
-    }],
-    "provisioners": [{
-      "type": "shell",
-      "inline": [
-          "sudo yum update -y"
-      ]
-  }
-]
+    "ami_name": "updated-ami {{timestamp}}"
+  }],
+  "provisioners": [{
+          "type": "shell",
+          "inline": [
+              "sudo yum update -y"
+          ]
+      }
+  ]
 }
