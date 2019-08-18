@@ -1,0 +1,10 @@
+{
+    "builders": [{
+    "type": "amazon-ebs",
+    "region": "us-est-1",
+    "instance_type": "t2.micro",
+    "ssh_username": "ubuntu",
+    "surce_ami": " ami-0b898040803850657",
+    "ami_name": "update-ami {{timestamp}}"
+    }]
+  }
