@@ -1,7 +1,7 @@
 {
     "builders": [{
     "type": "amazon-ebs",
-    "region": "us-est-1",
+    "region": "us-east-1",
     "instance_type": "t2.micro",
     "ssh_username": "ubuntu",
     "source_ami": " ami-0b898040803850657",
