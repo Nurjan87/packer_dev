@@ -60,7 +60,7 @@ pipeline{
         }
         stage("Build Image"){
             steps{
-                sh 'packer build -var "rgion=${Region} updated/updated.json'
+                sh 'packer build -var "region=${Region} updated/updated.json'
                 echo "Hello"
             }
         }
