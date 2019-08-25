@@ -60,7 +60,7 @@ pipeline{
         }
         stage("Build Image"){
             steps{
-                sh 'packer build -var "region=${REGION}" updated/updated.json'
+                sh 'packer build -var "region=${REGION}" update/update.json'
                 echo "Hello"
             }
         }
@@ -70,7 +70,7 @@ pipeline{
             echo "Done"
         }
         failure {
-            mail to:  "turganbaevanurkan@gmail.com", subject: "job", body: "job completed"
+            mail to:  "ibaidullaeva1997@gmail.com", subject: "job", body: "job completed"
         }
     }
 }
